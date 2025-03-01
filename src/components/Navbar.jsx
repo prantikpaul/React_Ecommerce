@@ -15,7 +15,7 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md ">
       <>
         <div className="py-2 shadow-md">
           <ul className="container m-auto flex flex-wrap justify-between md:flex-row px-4 md:px-2 items-center relative">
@@ -87,24 +87,25 @@ function Navbar() {
           <div className="flex ml-2 items-center">
           <Menu className="lg:hidden" />
             <Link to="/">
-            <img src={logo} alt="" className="h-[31px] w-[80px] ml-2" />
+            <img src={logo} alt="" className="h-[31px] w-[80px] lg:h-[40px] lg:w-[95px] ml-2" />
             </Link>
           </div>
-          <div className="relative flex items-center">
-          <input type="text" placeholder="Search" className="hidden lg:block border border-gray-200 rounded-2xl mx-auto w-[500px] p-2 "/>
-          <Search size={40} className="h-11 w-8 right-0 items-center m-auto bg-zinc-200 absolute rounded-2xl" />
+          <div className=" flex items-center">
+          <input type="text" placeholder="Search" className="hidden lg:block border border-gray-200 rounded-l-2xl mx-auto w-[500px] p-2 relative"/>
+
+          <Search size={40} className="hidden lg:block lg:h-11 lg:w-8 lg:right-0 lg:items-center lg:m-auto lg:bg-zinc-200  lg:rounded-r-2xl lg:cursor-pointer " />
           </div>
 
-          <div className="hidden lg:flex lg:items-center lg:gap-4">
-          <Phone size={25} />
-          <div className="font-bold">
-            <p className="text-xs">CALL US NOW</p>
-            <p className="text-lg">+01795018150</p>
+          <div className="flex items-center gap-4">
+          <Phone size={25} className="hidden lg:block" />
+          <div className="font-bold hidden lg:block">
+            <div className="text-xs">CALL US NOW</div>
+            <div className="text-lg">+01795018150</div>
           </div>
-          <div className="flex gap-2">
-            <Link><UserRound /></Link>
-            <Link><Heart /></Link>
-            <Link><ShoppingCart /></Link>
+          <div className="flex gap-3 mr-4">
+            <Link><UserRound size={28} /></Link>
+            <Link><Heart size={28} /></Link>
+            <Link to={"/cart"}><ShoppingCart size={28} /></Link>
           </div>
           </div>
         </nav>
