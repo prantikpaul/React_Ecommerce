@@ -62,6 +62,7 @@ const Ad = () => {
           ))}
         </div>
       </div>
+      {/* for lg device */}
       <div className="hidden lg:flex lg:justify-evenly lg:py-5  ">
         <div className="">
           <div className="flex ">

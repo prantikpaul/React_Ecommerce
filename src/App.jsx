@@ -6,6 +6,9 @@ import CartPage from "../src/pages/CartPage";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 import Ad from "./components/Ad";
+import Featured from "./components/Featured";
+import New_arrival from "./components/New_arrival";
+
 
 function App() {
   return (
@@ -13,6 +16,8 @@ function App() {
     <Navbar/>
     <Slider/>
     <Ad/>
+    <Featured/>
+    <New_arrival/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<ProductDetails />} />
