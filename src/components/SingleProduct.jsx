@@ -54,9 +54,9 @@ export default function SingleProduct() {
                 <div className='border border-gray-400 h-8 w-8 text-center py-1'>1</div>
                 <div className='border border-gray-400 h-8 w-6 text-center cursor-pointer py-1'>+</div>
             </div>
-            <div className='flex bg-slate-400 py-2 w-36 px-1 items-center h-12'>
+            <div className='flex bg-slate-400 py-2 w-36 px-1 items-center h-12 hover:bg-slate-700 gap-1 rounded-md hover:w-38 hover:h-13'>
             <ShoppingBasket />
-            <button type="button"> ADD TO CART</button>
+            <button className=' ' type="button"> ADD TO CART</button>
             </div>
         </div>
         <div></div>
